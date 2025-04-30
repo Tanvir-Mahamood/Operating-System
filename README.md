@@ -50,15 +50,17 @@ Containns tasks of my SE lab final.
 To run these OS-level programs and XINU, follow one of these installation environments:
 
 
-1. 🛠️ **Using WSL (Windows Subsystem for Linux)** <br>
-2. 🛠️ **Dual Boot on Windows:** <br>
-3. 🛠️ **Install Ubuntu Linux on Windows via the Microsoft Store:**<br>
-4. 🛠️ **Using VirtualBox with Ubuntu (Recommended for XINU Emulation):** <br>
+1. 🛠️ [Using WSL (Windows Subsystem for Linux)](https://github.com/Tanvir-Mahamood/Operating-System?tab=readme-ov-file#-install-wsl-and-ubuntu)
+2. 🛠️ [Dual Boot on Windows:](https://github.com/Tanvir-Mahamood/Operating-System?tab=readme-ov-file#-dual-boot-on-windows)
+3. 🛠️ [Install Ubuntu Linux on Windows via the Microsoft Store:](https://github.com/Tanvir-Mahamood/Operating-System?tab=readme-ov-file#-install-ubuntu-linux-on-windows-via-the-microsoft-store)
+4. 🛠️ [Using VirtualBox with Ubuntu (Recommended for XINU Emulation):](https://github.com/Tanvir-Mahamood/Operating-System?tab=readme-ov-file#-using-virtualbox-with-ubuntu-recommended-for-xinu-emulation)
 
 <br>
 
 ### <h1><p align="center">✅ Install WSL and Ubuntu:</p></h1>
-<p>WSL is fast, easy to use, and integrates well with your existing Windows setup. It’s 
+<p>
+
+[WSL](https://learn.microsoft.com/en-us/windows/wsl/about) is fast, easy to use, and integrates well with your existing Windows setup. It’s 
 suitable for learning and practicing shell scripting without the overhead of virtualization.
 If you use Windows, WSL lets you run Linux natively without a VM. Install lightweight distributions like Ubuntu from the Microsoft Store. WSL is highly efficient and integrates well with Windows.</p>
 ⌨ Open PowerShell as Administrator
@@ -227,7 +229,7 @@ sudo apt install build-essential
 ```
 
 ### <h1><p align="center">✅ Dual Boot on Windows:</p></h1>
-<p>Dual boot" or "dual booting" refers to the practice of installing and running multiple operating systems (OS) on a single computer, often Windows and Linux. This allows you to choose which OS to boot into each time you start your computer. Instead of splitting resources between operating systems, they are kept separate, and each OS needs its own partition and bootloader entry.</p>
+<p>"Dual boot" or "dual booting" refers to the practice of installing and running multiple operating systems (OS) on a single computer, often Windows and Linux. This allows you to choose which OS to boot into each time you start your computer. Instead of splitting resources between operating systems, they are kept separate, and each OS needs its own partition and bootloader entry.</p>
 
 **▶️YouTube:** You can follow this: [How to Dual Boot Windows 11 and Ubuntu](https://youtu.be/mXyN1aJYefc?si=_wTU0k81gbf45m41)
 
