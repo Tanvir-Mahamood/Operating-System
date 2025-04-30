@@ -43,17 +43,25 @@ Mini shell-based tools:
 - 💾 RAM Status Viewer
 - 💽 Disk Usage Monitor
 
+### ✅ Lab Final
+Containns tasks of my SE lab final.
+
 ## 💻 Software Setup and Environment (For **Windows Users**)
 To run these OS-level programs and XINU, follow one of these installation environments:
 
 
 1. 🛠️ **Using WSL (Windows Subsystem for Linux)** <br>
-WSL is fast, easy to use, and integrates well with your existing Windows setup. It’s 
-suitable for learning and practicing shell scripting without the overhead of virtualization.
-If you use Windows, WSL lets you run Linux natively without a VM. Install lightweight distributions like Ubuntu from the Microsoft Store. WSL 2 is highly efficient and integrates well with Windows.
+2. 🛠️ **Dual Boot on Windows:** <br>
+3. 🛠️ **Install Ubuntu Linux on Windows via the Microsoft Store:**<br>
+4. 🛠️ **Using VirtualBox with Ubuntu (Recommended for XINU Emulation):** <br>
 
-### ✅ Install WSL and Ubuntu:
-Open PowerShell as Administrator
+<br>
+
+### <h1><p align="center">✅ Install WSL and Ubuntu:</p></h1>
+<p>WSL is fast, easy to use, and integrates well with your existing Windows setup. It’s 
+suitable for learning and practicing shell scripting without the overhead of virtualization.
+If you use Windows, WSL lets you run Linux natively without a VM. Install lightweight distributions like Ubuntu from the Microsoft Store. WSL is highly efficient and integrates well with Windows.</p>
+⌨ Open PowerShell as Administrator
 Run the following command:
 
 ```bash
@@ -63,7 +71,7 @@ wsl --install
 - Restart your computer after installation
 - Open the Microsoft Store and search for Ubuntu
 - Click Install, then launch Ubuntu from the Start Menu
-### ✅ Update and install essential tools:
+#### ✅ Update and install essential tools:
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install build-essential gcc g++ make gdb
@@ -103,10 +111,10 @@ WSL instance is configured to log in directly as the `root` user. This bypasses 
   Now, when you open Ubuntu, it will prompt you to log in as the new user instead of the root user.
 
 - Restart WSL: To ensure the changes take effect, restart WSL by running:
-```bash
-wsl --shutdown
+  ```bash
+  wsl --shutdown
 
-```
+  ```
 
 Open Ubuntu again, and you should see your new user instead of root.
 
@@ -218,21 +226,23 @@ sudo apt install build-essential
 
 ```
 
+### <h1><p align="center">✅ Dual Boot on Windows:</p></h1>
+<p>Dual boot" or "dual booting" refers to the practice of installing and running multiple operating systems (OS) on a single computer, often Windows and Linux. This allows you to choose which OS to boot into each time you start your computer. Instead of splitting resources between operating systems, they are kept separate, and each OS needs its own partition and bootloader entry.</p>
 
-2. 🛠️ **Dual Boot on Windows:** <br>
-Dual boot" or "dual booting" refers to the practice of installing and running multiple operating systems (OS) on a single computer, often Windows and Linux. This allows you to choose which OS to boot into each time you start your computer. Instead of splitting resources between operating systems, they are kept separate, and each OS needs its own partition and bootloader entry
 **▶️YouTube:** You can follow this: [How to Dual Boot Windows 11 and Ubuntu](https://youtu.be/mXyN1aJYefc?si=_wTU0k81gbf45m41)
 
+### <h1><p align="center">✅ Install Ubuntu Linux on Windows via the Microsoft Store:</p></h1>
+<p>Find the distribution you prefer on the Microsoft Store and then click Get. Ubuntu will then be installed on your machine. Once installed, you can either launch the application directly from the Microsoft Store or search for Ubuntu in your Windows search bar.</p>
 
-3. 🛠️ **Install Ubuntu Linux on Windows via the Microsoft Store:**<br>
-Find the distribution you prefer on the Microsoft Store and then click Get. Ubuntu will then be installed on your machine. Once installed, you can either launch the application directly from the Microsoft Store or search for Ubuntu in your Windows search bar.<br>
 **▶️YouTube:** You can follow [How to  Install Ubuntu Linux on Windows via the Microsoft Store](https://youtu.be/OqCPkcRoMF0?si=IoRJNmw7z5v551mD)
 
+### <h1><p align="center">✅ Using VirtualBox with Ubuntu (Recommended for XINU Emulation):</p></h1>
+<p>VirtualBox, developed by Oracle, is a free and open-source virtualization software that allows you to run multiple operating systems simultaneously on a single computer. In the context of running Linux on Windows, VirtualBox enables you to install and run a Linux operating system as a virtual machine (VM) within your Windows environment. This means you can have a separate, isolated Linux system running alongside your Windows host operating system. </p>
 
-4. 🛠️ **Using VirtualBox with Ubuntu (Recommended for XINU Emulation):** <br>
-VirtualBox, developed by Oracle, is a free and open-source virtualization software that allows you to run multiple operating systems simultaneously on a single computer. In the context of running Linux on Windows, VirtualBox enables you to install and run a Linux operating system as a virtual machine (VM) within your Windows environment. This means you can have a separate, isolated Linux system running alongside your Windows host operating system. <br>
 **▶️YouTube:** You can follow [How to download and install Ubuntu 22.04 LTS in Virtualbox windows 10 with Full screen tutorial](https://youtu.be/f3QdUOD2vOs?si=E2fcu7xzp1ht-Z0G)
-<br>
+
+or
+
 **▶️YouTube:** You can follow [How To Install Ubuntu Linux in VirtualBox 2025 (Hindi) Step by Step](https://youtu.be/9EAPGgkLVV8?si=lFfIrRpN0dPqqvoS)
 
 ✅ Step-by-step Installation:
@@ -255,14 +265,18 @@ sudo apt install gcc g++ make gdb git qemu
 > [!TIP]
 > By installng any of these, you will be able to run shell scripts and c code dor linux process management.
 
-> [!IMPORTANT]
-> You may need to use shared folder.
-It allow you to easily access files and folders on your host operating system (Windows or Linux) from within your guest operating system (Windows or Linux) without needing a network connection. This provides a simple way to transfer and share data between the host and guest machines. 
+<hr>
 
-<br>
+> [!IMPORTANT]
+> 📁 You may need to use shared folder.
+
+**It allow you to easily access files and folders on your host operating system (Windows or Linux) from within your guest operating system (Windows or Linux) without needing a network connection. This provides a simple way to transfer and share data between the host and guest machines.**
+
+
 **▶️YouTube:** You can follow [Creating Shared folder in Virtualbox for Windows and Ubuntu](https://youtu.be/TtTtpPL0L8I?si=oyMFDwQOE3-ods4f)
 
-<br><br>
+<hr>
+
 In order emulate XINU on Ubuntu, we have to download and install XINU on our LINUX system.
 I am using Virtual Box. 
 
@@ -348,8 +362,12 @@ This section assumes you're inside the Ubuntu system (either WSL or VirtualBox).
 
 
      
-**After the installations without touble, you are mpletely ready to test and run `Shell Script`, `Linux Process management c code` and 
+**After the installations without touble, you are mpletely ready to test and run** `Shell Script`, `Linux Process management c code` and 
 `XINU Processmanagement code`.
+<br><br>
+
+
+<h1><p align="center">💻▶️Program Running</p></h1>
 
 ## ⚙️ How to Run a Shell Script in Linux
 - Navigate to the Script's Directory
@@ -480,7 +498,9 @@ kill QEMU_id
   make run-qemu 
   ```
 
-- In xinu shell, type command hello and press enter
+- In xinu shell, type command hello and press enter. Hello world message will be printed.
+
+
 
 
 
