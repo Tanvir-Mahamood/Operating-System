@@ -419,8 +419,9 @@ This section assumes you're inside the Ubuntu system (either WSL or VirtualBox).
   ```
 
 
-There are a lot of `Shell Programming` tutorial available on internet. I have followed:
-[Master SHELL SCRIPTING in ONE VIDEO](https://youtu.be/TtGM9GfBuok?si=b-aKPc-6yX3rzc4y)
+There are a lot of `Shell Programming` tutorial available on internet.
+- [Bash Scripting Tutorial – Linux Shell Script and Command Line for Beginners](https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners/)
+- [Master SHELL SCRIPTING in ONE VIDEO](https://youtu.be/TtGM9GfBuok?si=b-aKPc-6yX3rzc4y)
 
 
 ## ⚙️ How to run C Code for Linux Process Management
