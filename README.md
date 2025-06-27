@@ -1,11 +1,33 @@
 # 🧠 Operating System Design
 Welcome to my Operating System Design repository, a comprehensive collection of OS-level projects and lab exercises performed during my university sessional. The contents are based on the widely respected textbooks:
-- [Operating System Design The XINU Approach](https://github.com/Kikou1998/textbook/blob/master/Operating%20System%20Design%20The%20Xinu%20Approach.pdf)
+- [Operating System Design The XINU Approach.pdf](https://github.com/Kikou1998/textbook/blob/master/Operating%20System%20Design%20The%20Xinu%20Approach.pdf)
+
 This repository is organized into modules that correspond to various chapters and labs of the course. From **process management** to **interprocess communication**, and **Linux shell scripting** to **XINU emulation**, it is a hands-on journey through OS concepts with real C and shell code.
 
-## 📁 Repository Structure
+# Navigation
+1. [Repository Structure](#-repository-structure)
+   - [Chapter2_XINU_Codes](#-chapter2_xinu_codes)
+   - [Lab 02: Linux Process Management](#-lab02-linux-process-managementt)
+   - [Lab 03: Interprocess Communication (IPC)](#-lab03-interprocess-communication-ipc)
+   - [Shell_Programming & Shell_Programming2](#-shell_programming--shell_programming2)
+   - [Projects: Shell Scripting Projects](#-projects-shell-scripting-projects)
+   - [Lab Final](#-lab-final)
+2. [Software Setup and Environment](#-software-setup-and-environment-for-windows-users)
+   - [Install WSL and Ubuntu](#-install-wsl-and-ubuntu)
+   - [Dual Boot on Windows](#-dual-boot-on-windows)
+   - [Install Ubuntu Linux on Windows via the Microsoft Store](#-install-ubuntu-linux-on-windows-via-the-microsoft-store)
+   - [Using VirtualBox with Ubuntu (Recommended for XINU Emulation)](#-using-virtualbox-with-ubuntu-recommended-for-xinu-emulation)
+3. [Running and Emulating XINU](#-running-and-emulating-xinu)
+4. [Program Running](#️program-running)
+   - [How to Run a Shell Script in Linux](#️-how-to-run-a-shell-script-in-linux)
+   - [How to run C Code for Linux Process Management](#️-how-to-run-c-code-for-linux-process-management)
+   - [How to run C Code for XINU Process Management](#️-how-to-run-c-code-for-xinu-process-management)
+5. [License](#-license)
+6. [Author](#-author)
 
-### ✅ Chapter2_XINU_Codes
+# 📁 Repository Structure
+
+## ✅ Chapter2_XINU_Codes
 C source files derived from Chapter 2 `Concurrent Execution and Operating System services` of the XINU book. These demonstrate:
 - Console message printing
 - Process creation and scheduling
@@ -14,7 +36,7 @@ C source files derived from Chapter 2 `Concurrent Execution and Operating System
 - Producer-consumer problem using semaphores
 
 
-### ✅ lab02: Linux Process Management
+## ✅ lab02: Linux Process Management
 C code examples for basic Linux process control:
 - Retrieving PID and PPID (current process id and parent process id)
 - Exploring memory addresses of different variable types
@@ -23,13 +45,13 @@ C code examples for basic Linux process control:
 - Race conditions after fork()
 - Child termination with `EXIT_SUCCESS`, `EXIT_FAILURE`, and `custom exit` codes
 
-### ✅ lab03: Interprocess Communication (IPC)
+## ✅ lab03: Interprocess Communication (IPC)
 This directory contains:
 - Message passing between processes using pipe()
 - Parent-child communication
 - Demonstrates high-level IPC with process synchronization
 
-### ✅ Shell_Programming & Shell_Programming2
+## ✅ Shell_Programming & Shell_Programming2
 A collection of beginner to intermediate shell scripts covering:
 - Input/output, variables, arrays, strings
 - Arithmetic operations, conditionals, loops
@@ -37,16 +59,16 @@ A collection of beginner to intermediate shell scripts covering:
 - Random number generation
 - Argument passing, redirection
 
-### ✅ projects: Shell Scripting Projects
+## ✅ projects: Shell Scripting Projects
 Mini shell-based tools:
 - 📟 Digital Clock
 - 💾 RAM Status Viewer
 - 💽 Disk Usage Monitor
 
-### ✅ Lab Final
+## ✅ Lab Final
 Containns tasks of my SE lab final.
 
-## 💻 Software Setup and Environment (For **Windows Users**)
+# 💻 Software Setup and Environment (For **Windows Users**)
 To run these OS-level programs and XINU, follow one of these installation environments:
 
 
@@ -57,7 +79,7 @@ To run these OS-level programs and XINU, follow one of these installation enviro
 
 <br>
 
-### <h1><p align="center">✅ Install WSL and Ubuntu:</p></h1>
+## <h1><p align="center">✅ Install WSL and Ubuntu:</p></h1>
 <p>
 
 [WSL](https://learn.microsoft.com/en-us/windows/wsl/about) is fast, easy to use, and integrates well with your existing Windows setup. It’s 
@@ -73,7 +95,7 @@ wsl --install
 - Restart your computer after installation
 - Open the Microsoft Store and search for Ubuntu
 - Click Install, then launch Ubuntu from the Start Menu
-#### ✅ Update and install essential tools:
+### ✅ Update and install essential tools:
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install build-essential gcc g++ make gdb
@@ -228,17 +250,17 @@ sudo apt install build-essential
 
 ```
 
-### <h1><p align="center">✅ Dual Boot on Windows:</p></h1>
+## <h1><p align="center">✅ Dual Boot on Windows:</p></h1>
 <p>"Dual boot" or "dual booting" refers to the practice of installing and running multiple operating systems (OS) on a single computer, often Windows and Linux. This allows you to choose which OS to boot into each time you start your computer. Instead of splitting resources between operating systems, they are kept separate, and each OS needs its own partition and bootloader entry.</p>
 
 **▶️YouTube:** You can follow this: [How to Dual Boot Windows 11 and Ubuntu](https://youtu.be/mXyN1aJYefc?si=_wTU0k81gbf45m41)
 
-### <h1><p align="center">✅ Install Ubuntu Linux on Windows via the Microsoft Store:</p></h1>
+## <h1><p align="center">✅ Install Ubuntu Linux on Windows via the Microsoft Store:</p></h1>
 <p>Find the distribution you prefer on the Microsoft Store and then click Get. Ubuntu will then be installed on your machine. Once installed, you can either launch the application directly from the Microsoft Store or search for Ubuntu in your Windows search bar.</p>
 
 **▶️YouTube:** You can follow [How to  Install Ubuntu Linux on Windows via the Microsoft Store](https://youtu.be/OqCPkcRoMF0?si=IoRJNmw7z5v551mD)
 
-### <h1><p align="center">✅ Using VirtualBox with Ubuntu (Recommended for XINU Emulation):</p></h1>
+## <h1><p align="center">✅ Using VirtualBox with Ubuntu (Recommended for XINU Emulation):</p></h1>
 <p>VirtualBox, developed by Oracle, is a free and open-source virtualization software that allows you to run multiple operating systems simultaneously on a single computer. In the context of running Linux on Windows, VirtualBox enables you to install and run a Linux operating system as a virtual machine (VM) within your Windows environment. This means you can have a separate, isolated Linux system running alongside your Windows host operating system. </p>
 
 **▶️YouTube:** You can follow [How to download and install Ubuntu 22.04 LTS in Virtualbox windows 10 with Full screen tutorial](https://youtu.be/f3QdUOD2vOs?si=E2fcu7xzp1ht-Z0G)
@@ -283,7 +305,7 @@ In order emulate XINU on Ubuntu, we have to download and install XINU on our LIN
 I am using Virtual Box. 
 
 
-## 🧪 Running and Emulating XINU:
+# 🧪 Running and Emulating XINU:
 This section assumes you're inside the Ubuntu system (either WSL or VirtualBox).
 
 - Install X Server (Optional. Only needed for GUI.)<br>
@@ -369,7 +391,7 @@ This section assumes you're inside the Ubuntu system (either WSL or VirtualBox).
 <br><br>
 
 
-<h1><p align="center">💻▶️Program Running</p></h1>
+# <h1><p align="center">💻▶️Program Running</p></h1>
 
 ## ⚙️ How to Run a Shell Script in Linux
 - Navigate to the Script's Directory
@@ -505,12 +527,12 @@ kill QEMU_id
 
 
 
-## 📄 License
+# 📄 License
 This project is open source and available under the [Apache 2.0 License](LICENSE).
 
 
-💻 Author
-Tanvir Mahamood
-3rd Year CSE, RUET
+# 💻 Author
+Tanvir Mahamood <br>
+3rd Year CSE, RUET <br>
 [LinkedIn](https://www.linkedin.com/in/tanvir-mahamood/) | [GitHub](https://github.com/Tanvir-Mahamood) <br>
 Feel free to reach out via email: [deltatanvir2002@gmail.com](mailto:deltatanvir2002@gmail.com)
